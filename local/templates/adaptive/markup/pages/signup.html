@@ -1,0 +1,70 @@
+{{> header-inner-page }}
+<div class="container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Главная</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Регистрация</li>
+    </ol>
+  </nav>
+  <h1 class="layout__title">Регистрация</h1>
+
+  <div class="row">
+    <div class="col col-md-10 col-lg-8">
+      <form>
+        <div class="mb-4">
+          <label for="name" class="form-label">Имя</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-4">
+          <label for="surname" class="form-label">Фамилия</label>
+          <input type="text" class="form-control" id="surname">
+        </div>
+        <div class="mb-4">
+          <label for="login" class="form-label"><span class="form-required">*</span>Логин</label>
+          <input type="text" class="form-control" id="login">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="form-label is-invalid"><span class="form-required">*</span>Пароль</label>
+          <input type="password" class="form-control" id="password">
+          <div class="form-text">Не менее 6 символов длиной</div>
+        </div>
+        <div class="mb-4">
+          <label for="passwordConfirm" class="form-label is-invalid"><span class="form-required">*</span>Подтверждение пароля</label>
+          <input type="password" class="form-control" id="passwordConfirm">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="form-label"><span class="form-required">*</span>E-mail</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-4">
+          <label for="captcha" class="form-label"><span class="form-required">*</span>Введите слово на картинке</label>
+          <div class="input-group">
+            <span class="input-group-text input-group-captcha"><img src="/upload/captcha.png" alt=""></span>
+            <input type="text" class="form-control" id="captcha">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-secondary btn-lg mt-3">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-md-10 col-lg-8">
+      <hr class="signin-hr">
+
+      <div class="fs-5">
+        <p>
+          <span class="form-required">*</span>Обязательные поля
+        </p>
+        <div>
+          <a href="#">Войти</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+{{> footer-inner-page }}

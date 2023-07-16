@@ -1,0 +1,1429 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Единая торговая площадка «Сделано в Якутии»</title>
+  
+  
+  <!--Обратите внимание на type="module" - это должно остаться также, не type="javascript"-->
+  <!--	<script type="module" src="./js/vendor/jquery/dist/jquery.min.js"></script>-->
+  <!--	<script type="module" src="./js/vendor/fullpage.js/dist/jquery.fullpage.js"></script>-->
+  
+  <script type="module" crossorigin src="../assets/main-b78f9a4b.js"></script>
+  <link rel="stylesheet" href="../assets/main-8cb87304.css">
+</head>
+<body class="d-flex flex-column h-100 layout">
+<!-- Блок layout__page-loader нужно подключать только на главной странице. -->
+<div class="layout__page-loader" id="js-page-loader">
+	<img src="../assets/logo-412b47db.svg" alt="Якутия - единая торговая площадка">
+</div>
+<header class="header">
+	<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+		<div class="container position-relative">
+			<div class="menu-block" id="js-menu-block">
+							<span class="menu-block__toggler" id="js-menu-toggler">
+								<svg class="uicon-menu_toggler"><use xlink:href="../assets/sprite-b51d689e.svg#menu_toggler"></use></svg>
+								<svg class="uicon-menu_cross"><use xlink:href="../assets/sprite-b51d689e.svg#menu_cross"></use></svg>
+							</span>
+			  <ul class="menu" id="js-menu">
+			    <li class="menu-item menu-item_dropdown">
+			      <a href="#">Каталог</a>
+			      <span class="menu__second">
+										<span class="container d-block">
+											<ul class="menu__second-list">
+												<li class="menu-item"><a href="https://ya.ru"><span>Якутские ножи</span></a></li>
+												<li class="menu-item menu-item_dropdown">
+													<a href="#"><span>Украшения</span></a>
+													<span class="menu__third">
+														<ul>
+															<li><a href="#">Все товары</a></li>
+															<li><a href="#">Украшения и броши</a></li>
+															<li><a href="#">Кольца</a></li>
+															<li><a href="#">Изделия из золота</a></li>
+															<li><a href="#">Серьги</a></li>
+															<li><a href="#">Изделия из серебра</a></li>
+															<li><a href="#">Колье и подвески</a></li>
+															<li><a href="#">Бижутерия</a></li>
+															<li><a href="#">Браслеты</a></li>
+															<li><a href="#">Национальное украшение</a></li>
+														</ul>
+													</span>
+												</li>
+												<li class="menu-item"><a href="#"><span>Сувениры&nbsp;и подарки</span></a></li>
+												<li class="menu-item"><a href="#"><span>Одежда</span></a></li>
+												<li class="menu-item"><a href="#"><span>Обувь&nbsp;и аксессуары</span></a></li>
+												<li class="menu-item"><a href="#"><span>Продукты питания</span></a></li>
+												<li class="menu-item"><a href="#"><span>Здоровье&nbsp;и красота</span></a></li>
+												<li class="menu-item menu-item_dropdown">
+													<a href="#"><span>Спорт&nbsp;и отдых</span></a>
+													<span class="menu__third">
+													<ul>
+														<li><a href="#">Все товары</a></li>
+														<li><a href="#">Украшения и броши</a></li>
+														<li><a href="#">Кольца</a></li>
+														<li><a href="#">Изделия из золота</a></li>
+														<li><a href="#">Серьги</a></li>
+														<li><a href="#">Изделия из серебра</a></li>
+														<li><a href="#">Колье и подвески</a></li>
+														<li><a href="#">Бижутерия</a></li>
+														<li><a href="#">Браслеты</a></li>
+														<li><a href="#">Национальное украшение</a></li>
+													</ul>
+												</span>
+												</li>
+												<li class="menu-item menu-item_dropdown">
+													<a href="#"><span>Для дома</span></a>
+													<span class="menu__third">
+														<ul>
+															<li><a href="#">Изделия из серебра</a></li>
+															<li><a href="#">Колье и подвески</a></li>
+															<li><a href="#">Бижутерия</a></li>
+															<li><a href="#">Браслеты</a></li>
+															<li><a href="#">Национальное украшение</a></li>
+														</ul>
+													</span>
+												</li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item"><a href="#"><span>Название</span></a></li>
+												<li class="menu-item menu-item_dropdown">
+													<a href="#"><span>Название</span></a>
+													<span class="menu__third">
+														<ul>
+															<li><a href="#">Изделия из серебра</a></li>
+															<li><a href="#">Колье и подвески</a></li>
+															<li><a href="#">Бижутерия</a></li>
+															<li><a href="#">Браслеты</a></li>
+															<li><a href="#">Национальное украшение</a></li>
+														</ul>
+													</span>
+												</li>
+											</ul>
+										</span>
+									</span>
+			    </li>
+			
+			    <li class="menu-item menu-item_dropdown">
+			      <a href="#">Бренды</a>
+			      <span class="menu__second">
+										<span class="container d-block">
+											<ul class="menu__second-list">
+												<li class="menu-item"><a href="#"><span>Озон</span></a></li>
+												<li class="menu-item"><a href="#"><span>Сбербанк</span></a></li>
+												<li class="menu-item"><a href="#"><span>Нокиа</span></a></li>
+											</ul>
+										</span>
+									</span>
+			    </li>
+			    <li class="menu-item"><a href="#">Туризм</a></li>
+			  </ul>
+			</div>
+			
+			<a class="navbar-brand" href="../">
+			  <img src="../assets/logo-412b47db.svg" alt="Якутия - единая торговая площадка">
+			</a>
+			<div class="header__search">
+							<span class="header__search-toggler" id="js-search-toggler">
+								<svg class="uicon-search_toggler"><use xlink:href="../assets/sprite-b51d689e.svg#search_toggler"></use></svg>
+							</span>
+			  <form role="search" class="header__search-form" id="js-search-form" data-bs-theme="light">
+			    <input class="form-control header__search-input" type="search" placeholder="Искать товары"
+			           aria-label="Искать товары и бренды">
+			    <button class="header__search-btn" type="submit">
+			      <svg class="uicon-search">
+			        <use xlink:href="../assets/sprite-b51d689e.svg#search"></use>
+			      </svg>
+			    </button>
+			    <button class="header__search-cancel" type="button" id="js-mobile-cancel">
+			      <svg class="uicon-search_cross">
+			        <use xlink:href="../assets/sprite-b51d689e.svg#search_cross"></use>
+			      </svg>
+			    </button>
+			  </form>
+			</div>
+			<div class="header__personal">
+				<a href="#" class="header__cabinet">
+					<svg class="uicon-user">
+						<use xlink:href="../assets/sprite-b51d689e.svg#user"></use>
+					</svg>
+				</a>
+				<a href="#" class="header__favorites">
+					<svg class="uicon-heart">
+						<use xlink:href="../assets/sprite-b51d689e.svg#heart"></use>
+					</svg>
+					<span class="badge rounded-circle bg-danger">
+						<span class="badge-inner">12</span>
+					</span>
+				</a>
+				<a href="#" class="header__personal-item header__basket">
+					<svg class="uicon-bag">
+						<use xlink:href="../assets/sprite-b51d689e.svg#bag"></use>
+					</svg>
+					<span class="badge rounded-circle bg-danger">
+						<span class="badge-inner">21</span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+</header><main class="flex-shrink-0 mb-5">
+	<div class="homepage">
+		<div id="fullpage">
+			<div class="section">
+				<div class="homepage__banner homepage__fp-slide-full-height">
+					<div class="swiper swiper-banner mt-0">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="video-overlay"></div>
+								<video
+										id="my-video1"
+										class="video-js"
+										muted
+										autoplay
+										data-autoplay
+										loop
+										data-setup="{}"
+								>
+									<source src="../assets/video-89c91681.mp4" type="video/mp4" />
+									<p class="vjs-no-js">
+										Для просмотра этого видео, пожалуйста, убедитесь что JavaScript включен и
+										Ваш браузер
+										<a href="https://videojs.com/html5-video-support/" target="_blank"
+										>поддерживает видео HTML5</a>
+									</p>
+								</video>
+							</div>
+							<div class="swiper-slide"><a href="http://ya.ru"><img src="../assets/1-986e70d0.jpg" alt=""></a></div>
+							<div class="swiper-slide"><a href="#"><img src="../assets/2-b2c3c776.jpg" alt=""></a></div>
+							<div class="swiper-slide"><a href="#"><img src="../assets/3-3f88557c.jpg" alt=""></a></div>
+							<div class="swiper-slide"><a href="#"><img src="../assets/4-7e2a7b3c.jpg" alt=""></a></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__popular homepage__fp-slide-full-height">
+					<h2 class="container-fluid homepage__h2">
+						Популярные категории товаров
+					</h2>
+					<div class="homepage__popular-title">
+						Популярные <br>
+						категории <br>
+						товаров
+					</div>
+					<div class="homepage__popular-items">
+						<div class="homepage__popular-items-row">
+							<a href="http://ya.ru"><img src="../assets/1-7b669d8d.jpg" alt=""><span>Якутские Ножи</span></a>
+							<a href="#"><img src="../assets/2-4a5b09b6.jpg" alt=""><span>Украшения</span></a>
+						</div>
+						<div class="homepage__popular-items-row">
+							<a href="#"><img src="../assets/3-19552aa5.jpg" alt=""><span>Украшения</span></a>
+							<a href="#"><img src="../assets/4-5b75e9a6.jpg" alt=""><span>Мед</span></a>
+						</div>
+						<div class="homepage__popular-items-row">
+							<a href="#"><img src="../assets/5-70aff16a.jpg" alt=""><span>Национальная одеджа</span></a>
+							<a href="#"><img src="../assets/6-a6bdefb5.jpg" alt=""><span>Национальная посуда</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__fp-slide">
+					<h2 class="container-fluid homepage__h2">
+						Новинки
+					</h2>
+					<!-- Swiper -->
+					<div class="swiper swiper-novelties js-swiper-novelties">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="../assets/novelty-54c2929f.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье серое</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="../assets/novelty-54c2929f.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Промежуточный костюм универсальный с оленьей шерстью</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">122 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="../assets/novelty-54c2929f.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="../assets/novelty-54c2929f.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="../assets/novelty-54c2929f.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="../assets/novelty-54c2929f.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="../assets/novelty-54c2929f.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+					<div class="homepage__adv">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">
+									<a href="#"><img src="../assets/rekl1-215b0b9c.jpg" alt="Реклама 1"></a>
+								</div>
+								<div class="col">
+									<a href="#"><img src="../assets/rekl2-32b03286.jpg" alt="Реклама 2"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__fp-slide">
+					<h2 class="container-fluid homepage__h2">
+						Популярные товары
+					</h2>
+					<!-- Swiper -->
+					<div class="swiper swiper-products js-swiper-products-popular">
+					  <div class="swiper-wrapper">
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					          <span class="product-item__label">Бесплатная доставка</span>
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">5 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">7 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое национальное со
+					            вставками и блестками праздничное и для повседневной носки</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">122 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="swiper-button-next"></div>
+					  <div class="swiper-button-prev"></div>
+					</div><!-- Swiper -->
+					<div class="swiper swiper-products js-swiper-products-popular">
+					  <div class="swiper-wrapper">
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					          <span class="product-item__label">Бесплатная доставка</span>
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">5 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">7 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое национальное со
+					            вставками и блестками праздничное и для повседневной носки</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">122 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="swiper-button-next"></div>
+					  <div class="swiper-button-prev"></div>
+					</div>				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__fp-slide">
+					<h2 class="container-fluid homepage__h2">
+						Лучшие предложения
+					</h2>
+					<!-- Swiper -->
+					<div class="swiper swiper-products js-swiper-products-popular">
+					  <div class="swiper-wrapper">
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					          <span class="product-item__label">Бесплатная доставка</span>
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">5 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">7 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое национальное со
+					            вставками и блестками праздничное и для повседневной носки</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">122 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="swiper-button-next"></div>
+					  <div class="swiper-button-prev"></div>
+					</div><!-- Swiper -->
+					<div class="swiper swiper-products js-swiper-products-popular">
+					  <div class="swiper-wrapper">
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					          <span class="product-item__label">Бесплатная доставка</span>
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">5 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">7 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое национальное со
+					            вставками и блестками праздничное и для повседневной носки</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">122 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					    <div class="swiper-slide">
+					      <div class="product-item">
+					        <a href="http://ya.ru" class="product-item__image">
+					          <img src="../assets/product-item-50d3f492.jpg" alt="Платье серое">
+					        </a>
+					        <div class="text-center pt-2">
+					          <a href="#" class="product-item__title link-dark mb-0">Платье серое</a>
+					          <div class="product-item__prices">
+					            <span class="fw-bold fs-5">12 200 ₽</span>
+					            <span class="text-decoration-line-through fw-light">12 800 ₽</span>
+					          </div>
+					          <div class="product-item__rating">
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star_active"><use xlink:href="../assets/sprite-b51d689e.svg#star_active"></use></svg>
+					            <svg class="uicon-star"><use xlink:href="../assets/sprite-b51d689e.svg#star"></use></svg>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="swiper-button-next"></div>
+					  <div class="swiper-button-prev"></div>
+					</div>				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__fp-slide-full-height homepage__fp-slide-brands">
+					<div class="homepage__fp-slide-brands-content">
+						<div class="w-100">
+							<h2 class="container-fluid homepage__h2">
+								Популярные бренды
+							</h2>
+							<div class="mb-5">
+								<div class="homepage__brands">
+									<div class="d-flex flex-wrap justify-content-between">
+										<a href="#"><img src="data:image/jpeg;base64,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" alt="Название бренда"></a>
+										<a href="#"><img src="data:image/jpeg;base64,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" alt="Название бренда"></a>
+										<a href="#"><img src="data:image/jpeg;base64,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" alt="Название бренда"></a>
+										<a href="#"><img src="data:image/jpeg;base64,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" alt="Название бренда"></a>
+										<a href="#"><img src="data:image/jpeg;base64,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" alt="Название бренда"></a>
+										<a href="#"><img src="data:image/jpeg;base64,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" alt="Название бренда"></a>
+										<a href="#"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4gJkSUNDX1BST0ZJTEUAAQEAAAJUbGNtcwQwAABtbnRyUkdCIFhZWiAH5wAFAB4AEwALABthY3NwTVNGVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAAD5jcHJ0AAABSAAAAEx3dHB0AAABlAAAABRjaGFkAAABqAAAACxyWFlaAAAB1AAAABRiWFlaAAAB6AAAABRnWFlaAAAB/AAAABRyVFJDAAACEAAAACBnVFJDAAACEAAAACBiVFJDAAACEAAAACBjaHJtAAACMAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACIAAAAcAHMAUgBHAEIAIABJAEUAQwA2ADEAOQA2ADYALQAyAC4AMQAAbWx1YwAAAAAAAAABAAAADGVuVVMAAAAwAAAAHABOAG8AIABjAG8AcAB5AHIAaQBnAGgAdAAsACAAdQBzAGUAIABmAHIAZQBlAGwAeVhZWiAAAAAAAAD21gABAAAAANMtc2YzMgAAAAAAAQxCAAAF3v//8yUAAAeTAAD9kP//+6H///2iAAAD3AAAwG5YWVogAAAAAAAAb6AAADj1AAADkFhZWiAAAAAAAAAknwAAD4QAALbDWFlaIAAAAAAAAGKXAAC3hwAAGNlwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIAD4APQMBEQACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAABQYHCAEDBAL/xAA1EAABAwMCAwYFAwMFAAAAAAABAgMEBQYRAAcSIVETFCIxQWEIMlJicRZCgRUjciQmM1OS/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwC5egNAaCNd1a1c0iqRrYsZ1CKuy0anLWsZSlls+Bk9C6scP+IUdA8bMr0W5bbhVqJlLclviLavmbWOSkKHopKgQfcaBZ0BoDQGgNAnXJV4dBocysVB3sosRlTrqvYDPLqfQDroG1tVSZjFNlXDW2+Ct153vklCuZYbxhpj8IRgf5FR9dBwU7Nm7mPUw+CjXMtUmH9LM1Iy637dokcY90r66CRRoDQGgNAHQR1df+8b/hWk3lVKpBbqNXI8nHM5jsH+R2hHRKeuga2+Zu6LX0Ko02X/AK2OmNEahqLSmyXEJypYIx4lp/Pl11kPCZbtSuTayJTp8gt1uO02/FlqBC25LfNtwgjIORzHQkZOtBc29uIXLbEeoOtd3mIKmJsc+bEhB4XEH8KBx1BB9dA4tAaA0CJe9wRrZtmbWZKVOBhH9tpPzPOE4Q2n3UogD86BJ2+o7ts2o5NrKw5Vpq1T6q6nnxPL5lI+1IwgeyRoGVfcm3L6kwZf9YqseBHaWVIjMlCnHEqaWk8eRgpVw8vU46amiQKPdVIkTIlIRJfcnOBaMLaKSS2PEo9M+fTTAgTwbN3MaqKPBRboWmPK+lmekYbX7dokcB+5KOuqJET5aDOgwTgZ0EdSj+stzkRPnolrKDz/ANL09ScoR79kg8R+5aemgdLtz2o4hbLlw0ZSSClSVTG/5BGdShGlXJtlGecjSa9bDTiT421ymQQfD5jP2p/8jppRpbura1uemem57bTJSsrDgntBQJGD+716aDuqrlrbi2xU6LTq1CntrbAU7CkJcVHc821gpJwoKAUPcaoztdX5Vat9UeqgN1qmPKg1NscsPIx4x9q0lKx7KGgdugbW49xqtu2XpcZkSKi+pMWnx/8AukuHhbT+MnJ6AE6D3t/bqbZtaNS1Ol+UeJ6ZIPm/IWeJxw/lRP8AGBoIk3P+F+zbsqsmsUubLoM6QouOJYAWwpZ81cB8snoRqbgqVu9RKzYe4lTt2ZJiPuslCw6hhJDiVIBSrxAkHHmM8jqLmVLXw8bJVDcK2W7ordeagU15xSGGI0FhTq+BXCSVKSQnmCMYJ0Ra7bixaFYlGNOozAKnDl+SttCXXiCccRQkA4yQOWtBFvAGz78g3i14KXU+zptaA+VCicR5B/Cj2ZPRY+nQSGlWRnQVy3H3iodG3ucZrNGrk+JbjKkREQ4wWgylpT2rpJI+RC0JHTjV1GpR1j4q7NBKf0xdRI4+XdEZ8Hz/AL/2+vT10qw192PiVqsq12G7Bt6vU2dJXnvc6ngoLIQpRLfMgnlnPMAAnU3SK3U5ym12pVGubjVC5lvyWw8iRFjJcU4VEgLWpwgcOQAMefkCMahhc2n3K3C29lKbtRUyZR3Xgvur0RS2nQVFIUAM8KlYI8J8xjnjTNFnGviqtFUXvJta6S2lHGtxMRJQBzyc8eMeFXP2PTWqjXX/AIiLPrlBl0yo2NeL0Ga2qM6DTxhXF4cA8Xnk8vfGlD7+HK83rv2/He25iJtJkKp75mNFt1zgAKFqHopSFIJ986oj/c7ai9q9c9cVT6nbyaTUJ5mBqSHQ8F8DABKkj0LIOAcHiOc+kCMjaPc4TO+qq1muSQ4+QtbDuA284lbjeAnGDwhOfPGefPSDiomyG4tHXEXBrNq8UNpxiP2qX3AhtbpcUMEY5g8GfpyPXSLWqs7Fbh1O3XaAqr2m1ALTTTCUofKo6EOcfChRTnBOMg8uQPnnSI2UjY/cem0mkU1FbtZbVJcD0RRD6VpcC1r4iQkZ/wCQjB5chjnpB0K2b3KcVDU9VrQX2Jb7dPZPBEpKUvJWlxITjCw+vixjnz5aQZa2Z3G7rCRJq9sPyYcpyUiR2klCypbilqB4QAR41DHTSCZNirSq1qUerN1lylqkTZ4fCaelQbSkMttj5gDxeDJ/OmD/2Q==" alt="Название бренда"></a>
+										<a href="#"><img src="data:image/jpeg;base64,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" alt="Название бренда"></a>
+									</div>
+								</div>
+								<div class="pt-5 text-center">
+									<a href="#" class="btn btn-primary btn-lg">Все бренды</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="footer mt-auto">
+						<div class="footer__inner">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3 footer__col footer__col_logo">
+										<div class="d-inline-block">
+											<div class="mb-4">
+												<svg class="uicon-footer_logo"><use xlink:href="../assets/sprite-b51d689e.svg#footer_logo"></use></svg>
+											</div>
+											<div class="text-center">
+												<a href="#" class="me-3">
+													<img src="../assets/footer_yakutia-e12658a1.svg" alt="">
+												</a>
+												<a href="#" class="me-3">
+													<svg class="uicon-footer_my_business"><use xlink:href="../assets/sprite-b51d689e.svg#footer_my_business"></use></svg>
+												</a>
+												<a href="#">
+													<svg class="uicon-footer_national_projects"><use xlink:href="../assets/sprite-b51d689e.svg#footer_national_projects"></use></svg>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 footer__col">
+										<div class="menu-footer">
+											<div class="menu-footer__header">Общая информация</div>
+											<ul>
+												<li><a href="#">О &laquo;Сделано в Якутии&raquo;</a></li>
+												<li><a href="#">Новости</a></li>
+												<li><a href="#">Отзывы</a></li>
+												<li><a href="#">Контакты</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3 footer__col">
+										<div class="menu-footer">
+											<div class="menu-footer__header">Покупателям</div>
+											<ul>
+												<li><a href="#">Как сделать заказ</a></li>
+												<li><a href="#">Оплата</a></li>
+												<li><a href="#">Доставка</a></li>
+												<li><a href="#">Возврат</a></li>
+												<li><a href="#">Правила продажи</a></li>
+												<li><a href="#">Пользовательское соглашение</a></li>
+												<li><a href="#">Политика конфеденциальности</a></li>
+												<li><a href="#">Вопросы и ответы</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3 footer__col">
+										<div class="menu-footer">
+											<div class="menu-footer__header">Продавцам</div>
+											<ul>
+												<li><a href="#">Стать продавцом</a></li>
+												<li><a href="#">Договор оферты</a></li>
+												<li><a href="#">Вопросы и ответы</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="row align-items-center">
+										<div class="col-2">
+											<span class="footer__arrow-up" id="js-scroll-to-up">
+												<svg class="uicon-arrow_up"><use xlink:href="../assets/sprite-b51d689e.svg#arrow_up"></use></svg>
+											</span>
+										</div>
+										<div class="col-10">
+											<div class="text-end"><small>© 2023 ГАУ РС(Я) «ЦЕНТР&nbsp;«МОЙ&nbsp;БИЗНЕС»</small></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+					<div class="mobile-bottom-nav">
+						<a href="/"><svg class="uicon-home_gray"><use xlink:href="../assets/sprite-b51d689e.svg#home_gray"></use></svg></a>
+						<a href="#" class="mobile-bottom-nav__favorites">
+							<svg class="uicon-heart_gray_no_bg"><use xlink:href="../assets/sprite-b51d689e.svg#heart_gray_no_bg"></use></svg>
+							<span class="badge rounded-circle bg-danger">
+									<span class="badge-inner">12</span>
+								</span>
+						</a>
+						<a href="#" class="mobile-bottom-nav__basket">
+							<svg class="uicon-bag_gray"><use xlink:href="../assets/sprite-b51d689e.svg#bag_gray"></use></svg>
+							<span class="badge rounded-circle bg-danger">
+									<span class="badge-inner">21</span>
+								</span>
+						</a>
+						<a href="#">
+							<svg class="uicon-user_gray"><use xlink:href="../assets/sprite-b51d689e.svg#user_gray"></use></svg>
+						</a>
+					</div>				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!--<footer class="footer mt-auto">
+	<div class="footer__inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 footer__col footer__col_logo">
+					<div class="d-inline-block">
+						<div class="mb-4">
+							<svg class="uicon-footer_logo"><use xlink:href="/imgs/sprite.svg#footer_logo"></use></svg>
+						</div>
+						<div class="text-center">
+							<a href="#" class="me-3">
+								<img src="/imgs/footer_yakutia.svg" alt="">
+							</a>
+							<a href="#" class="me-3">
+								<svg class="uicon-footer_my_business"><use xlink:href="/imgs/sprite.svg#footer_my_business"></use></svg>
+							</a>
+							<a href="#">
+								<svg class="uicon-footer_national_projects"><use xlink:href="/imgs/sprite.svg#footer_national_projects"></use></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 footer__col">
+					<div class="menu-footer">
+						<div class="menu-footer__header">Общая информация</div>
+						<ul>
+							<li><a href="#">О &laquo;Сделано в Якутии&raquo;</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 footer__col">
+					<div class="menu-footer">
+						<div class="menu-footer__header">Покупателям</div>
+						<ul>
+							<li><a href="#">Как сделать заказ</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Правила продажи</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">Политика конфеденциальности</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 footer__col">
+					<div class="menu-footer">
+						<div class="menu-footer__header">Продавцам</div>
+						<ul>
+							<li><a href="#">Стать продавцом</a></li>
+							<li><a href="#">Договор оферты</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="row align-items-center">
+					<div class="col-2">
+						<span class="footer__arrow-up" id="js-scroll-to-up">
+							<svg class="uicon-arrow_up"><use xlink:href="/imgs/sprite.svg#arrow_up"></use></svg>
+						</span>
+					</div>
+					<div class="col-10">
+						<div class="text-end"><small>© 2023 ГАУ РС(Я) «ЦЕНТР&nbsp;«МОЙ&nbsp;БИЗНЕС»</small></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="mobile-bottom-nav">
+	<a href="/"><svg class="uicon-home_gray"><use xlink:href="/imgs/sprite.svg#home_gray"></use></svg></a>
+	<a href="#" class="mobile-bottom-nav__favorites">
+		<svg class="uicon-heart_gray_no_bg"><use xlink:href="/imgs/sprite.svg#heart_gray_no_bg"></use></svg>
+		<span class="badge rounded-circle bg-danger">
+				<span class="badge-inner">12</span>
+			</span>
+	</a>
+	<a href="#" class="mobile-bottom-nav__basket">
+		<svg class="uicon-bag_gray"><use xlink:href="/imgs/sprite.svg#bag_gray"></use></svg>
+		<span class="badge rounded-circle bg-danger">
+				<span class="badge-inner">21</span>
+			</span>
+	</a>
+	<a href="#">
+		<svg class="uicon-user_gray"><use xlink:href="/imgs/sprite.svg#user_gray"></use></svg>
+	</a>
+</div>-->
+</body>
+</html>

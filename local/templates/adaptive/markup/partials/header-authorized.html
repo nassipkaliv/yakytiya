@@ -1,0 +1,60 @@
+<header class="header">
+	<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+		<div class="container position-relative">
+			{{> header-menu-brand-search }}
+			<div class="header__personal">
+				<div class="header__cabinet">
+					<div class="dropdown" data-bs-theme="light">
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="30,30">
+							<!-- Программисту: если есть картинка пользователя, выводить картинку. Нет - выводить картинку по умолчанию -->
+<!--							<img src="/upload/header/userphoto.png" alt="">-->
+							<img src="/imgs/header_user_small.svg" alt="">
+						</button>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+							<li>
+								<a class="dropdown-item dropdown-profile" href="#">
+									<!-- Программисту: если есть картинка пользователя, выводить картинку. Нет - выводить картинку по умолчанию -->
+<!--									<img src="/upload/header/userphotobig.png" alt="">-->
+									<img src="/imgs/header_user_big.svg" alt="">
+									<span class="header__cabinet-username">Петрова Галина Анатольевна</span>
+								</a>
+							</li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Заказы</a></li>
+							<li><a class="dropdown-item" href="#">Корзина</a></li>
+							<li><a class="dropdown-item" href="#">Избранное</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li>
+								<span class="dropdown-item-text">
+									<span class="fw-bold">Бизнес кабинет</span>
+								</span>
+							</li>
+							<li><a class="dropdown-item" href="#">Заказы</a></li>
+							<li><a class="dropdown-item" href="#">Список товаров</a></li>
+							<li><a class="dropdown-item" href="#">Доставка</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Выйти</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<a href="#" class="header__favorites">
+					<svg class="uicon-heart">
+						<use xlink:href="/imgs/sprite.svg#heart"></use>
+					</svg>
+					<span class="badge rounded-circle bg-danger">
+						<span class="badge-inner">12</span>
+					</span>
+				</a>
+				<a href="#" class="header__personal-item header__basket">
+					<svg class="uicon-bag">
+						<use xlink:href="/imgs/sprite.svg#bag"></use>
+					</svg>
+					<span class="badge rounded-circle bg-danger">
+						<span class="badge-inner">21</span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+</header>

@@ -1,0 +1,2 @@
+* * * * *  su www-data -s /bin/sh -c "/usr/bin/php /var/www/html/bitrix/php_interface/cron_events.php"> /tmp/cron_events.log 2>&1
+#

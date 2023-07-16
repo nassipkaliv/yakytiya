@@ -1,0 +1,375 @@
+@use "sass:math";
+.homepage{
+	&__h2{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		font-family: $font-MADEBarista;
+		color: $black;
+		font-size: 32px;
+		line-height: 44px;
+		text-transform: uppercase;
+		@include media-breakpoint-up(lg) {
+			font-size: 64px;
+			line-height: 80px;
+		}
+	}
+	&__banner{
+		height: 360px * 0.75;
+		@include media-breakpoint-up(sm) {
+			height: 576px * 0.75;
+		}
+		@include media-breakpoint-up(md) {
+			height: 768px * 0.75;
+		}
+		@include media-breakpoint-up(md) {
+			height: 992px * 0.75;
+		}
+		@include media-breakpoint-up(xl) {
+			height: calc(100vh - $header-height);
+		}
+	}
+	&__popular{
+		//background: $gray-100;
+		@include media-breakpoint-up(lg) {
+			align-items: stretch;
+			display: flex;
+			//height: calc(100vh - $header-height);
+			.homepage__h2{
+				display: none;
+			}
+		}
+		&-title{
+			display: none;
+			@include media-breakpoint-up(lg) {
+				display: block;
+				font-family: $font-MADEBarista;
+				color: $black;
+				text-transform: uppercase;
+				width: 43%;
+				//height: 100%;
+				padding: 4% 6%;
+				margin: 0;
+				font-size: 104px;
+				line-height: 104px;
+				background: $gray-200 url("/imgs/homepage_populag_bg.jpg") center center no-repeat;
+				background-size: cover;
+			}
+		}
+		&-items{
+			margin: 0;
+			padding: 0;
+			@include media-breakpoint-up(lg) {
+				width: 57%;
+				//height: 100%;
+			}
+			&-row{
+				display: flex;
+				height: math.div(100%, 3);
+				a{
+					display: block;
+					position: relative;
+					width: math.div(100%, 2);
+					overflow: hidden;
+					img{
+						width: 100%;
+						height: 100%;
+						//нужен cover, но в хроме есть артефакт с тем, что иногда
+						//появляется белая линия в 1 пиксель, а с contain такого нет.
+						//object-fit: cover;
+						object-fit: contain;
+						@include media-breakpoint-up(xl) {
+							//для того, чтобы все-таки блок популярных помещался на страницу, нужно его ужать.
+							object-fit: cover;
+						}
+					}
+					span{
+						//display: none;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						height: 40px;
+						padding: 0 1rem;
+						background-color: rgba($nav-second-color, .7);
+						transition: background-color 0.2s ease-out 0s;
+						color: $white;
+						text-transform: uppercase;
+						text-align: center;
+						font-weight: 600;
+						font-size: $font-size-12px;
+						line-height: $font-size-14px;
+
+					}
+					&:hover span{
+						background-color: rgba($nav-second-color, 1);
+					}
+				}
+			}
+		}
+	}
+	&__adv{
+		.col{
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+		img{
+			width: 100%;
+		}
+	}
+
+	&__brands{
+		height: 74px;
+		overflow: hidden;
+		a{
+			display: flex;
+			align-items: center;
+			padding: 0 math.div($container-padding-x, 2);
+			height: 74px;
+			//&:first-child{
+			//	padding-left: 0;
+			//}
+			//&:last-child{
+			//	padding-right: 0;
+			//}
+			img{
+				width: auto;
+			}
+		}
+	}
+}
+
+//когда включается плагин fullpage
+.fp-enabled{
+	.header{
+		//display: none;
+		position: fixed;
+		left: 0;
+		right: 0;
+	}
+	.homepage__fp-slide{
+		max-height: calc(100vh - $header-height);
+	}
+	.homepage__fp-slide-full-height{
+		height: calc(100vh - $header-height);
+	}
+	.homepage__fp-slide-brands{
+		display: flex;
+		flex-direction: column;
+		//.homepage__h2{
+		//	margin-top: 2rem;
+		//}
+		&-content{
+			flex-grow: 1;
+			display: flex;
+			align-items: center;
+
+		}
+	}
+	.homepage__h2{
+		margin-top: 0;
+	}
+	.swiper:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+.swiper-banner{
+	--swiper-pagination-bullet-inactive-color: #fff;
+	--swiper-pagination-bullet-inactive-opacity: 1;
+	--swiper-pagination-color: #008080;
+	--swiper-pagination-bullet-size: 7px;
+	--swiper-pagination-bullet-horizontal-gap: 5px;
+	--swiper-pagination-bottom: 24px;
+	width: 100%;
+	height: 100%;
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.swiper-slide a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.swiper-pagination-bullet-active{
+		position: relative;
+		top: 2px;
+		width: 12px;
+		height: 12px;
+	}
+	.video-overlay{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		z-index: 1;
+	}
+	.video-js{
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		display: none;
+	}
+	video{
+		object-fit: cover;
+	}
+}
+
+.swiper-novelties, .swiper-products{
+	--swiper-navigation-color: $black;
+	--swiper-navigation-size: 24px;
+	--swiper-navigation-sides-offset: 0;
+	width: 100%;
+	user-select: none;
+
+	.swiper-button-next, .swiper-button-prev{
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 60px;
+	}
+	.swiper-button-next:after, .swiper-button-prev:after{
+		position: absolute;
+		content: '';
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.swiper-button-prev:after{
+		//src/icons/slider_arrow_left.svg
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuNyIvPgo8cGF0aCBkPSJNMjQuNDQ0NSAzMS4xMTExTDEzLjMzMzQgMjBMMjQuNDQ0NSA4Ljg4ODg2IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+	}
+	.swiper-button-next:after{
+		//src/icons/slider_arrow_right.svg
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDQwIDApIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjciLz4KPHBhdGggZD0iTTE1LjU1NTYgMzEuMTExMUwyNi42NjY3IDIwTDE1LjU1NTYgOC44ODg4NiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+	}
+	.swiper-button-disabled{
+		display: none;
+	}
+}
+
+.swiper-novelties{
+	margin-bottom: 2.5rem;
+	.novelty-item{
+		width: 300px;
+		//@include media-breakpoint-up(sm) {
+		//	width: 410px;
+		//}
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&__body{
+			text-align: center;
+		}
+		&__title{
+			display: block;
+			text-decoration: none;
+			font-size: $font-size-20px;
+			line-height: $font-size-24px;
+			max-height: 4*$font-size-24px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		&__prices{
+			span{
+				white-space: nowrap;
+				margin-right: 0.5rem;
+			}
+		}
+		&__rating{
+			line-height: 15px;
+		}
+	}
+	.swiper-slide {
+		width: fit-content;
+	}
+	.swiper-button-next:after, .swiper-button-prev:after{
+		top: 150px - 7px;
+		@include media-breakpoint-up(sm) {
+			top: 205px - 7px;
+		}
+	}
+}
+
+.swiper-products{
+	//--swiper-navigation-top-offset: 100px;
+	margin-bottom: 2.5rem;
+	.product-item{
+		width: 200px;
+		&__image{
+			display: block;
+			position: relative;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&__label{
+			display: block;
+			position: absolute;
+			left: 1rem;
+			bottom: 1rem;
+			background: $product-item-label-bg;
+			font-size: $font-size-10px;
+			font-weight: 300;
+			color: $white;
+			padding: 0 0.2rem;
+		}
+		&__title{
+			display: block;
+			text-decoration: none;
+			font-size: $font-size-20px;
+			line-height: $font-size-24px;
+			max-height: 2*$font-size-24px;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+		}
+		&__prices{
+			span{
+				white-space: nowrap;
+				margin-right: 0.5rem;
+			}
+		}
+		&__rating{
+			line-height: 15px;
+		}
+	}
+
+	.swiper-slide {
+		width: fit-content;
+	}
+	.swiper-button-next:after, .swiper-button-prev:after{
+		top: 100px - 7px;
+	}
+}
+
+
+
+
+

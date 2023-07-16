@@ -1,0 +1,28 @@
+.pagination{
+  margin-bottom: 0;
+  user-select: none;
+  .page-item{
+    margin-left: 5px;
+    &:first-child{
+      margin-left: 0;
+    }
+    .page-link{
+      min-width: 35px;
+      text-align: center;
+    }
+  }
+  span.page-link{
+    cursor: default;
+    &:hover{
+      color: $primary;
+      background: $white;
+    }
+  }
+  .active span.page-link:hover{
+    color: $white;
+    background: $primary;
+  }
+  .page-link:focus{
+    background: $white;
+  }
+}

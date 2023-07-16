@@ -1,0 +1,52 @@
+@use "sass:math";
+.news-list{
+  &__el{
+    margin-bottom: 3rem;
+    img{
+      max-width: 100%;
+    }
+    h2{
+      margin: 1.5rem 0 1rem 0;
+    }
+    &-title{
+      font-size: $font-size-32px;
+      line-height: $font-size-40px;
+      text-decoration: none;
+      font-weight: normal;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-wrap: wrap;
+    &__el{
+      width: math.div(100%,2);
+      &:nth-child(odd) {
+        padding: 0 10px 0 0;
+      }
+      &:nth-child(even) {
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &__el{
+      width: math.div(100%,3);
+      &:nth-child(3n+1) {
+        padding: 0 14px 0 0;
+      }
+      &:nth-child(3n+2) {
+        padding: 0 7px 0 7px;
+      }
+      &:nth-child(3n) {
+        padding: 0 0 0 14px;
+      }
+    }
+  }
+}
+
+.news-card{
+
+}

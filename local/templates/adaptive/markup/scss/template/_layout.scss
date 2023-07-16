@@ -1,0 +1,89 @@
+head,body{
+	min-width: 342px;
+}
+.layout{
+	background: url("/imgs/background.svg") left top repeat;
+	&_inner{
+		background: $white;
+	}
+	&__page-loader{
+		background: $navbar-bg-color;
+		z-index: 9999;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		padding: 0;
+		//padding: 1rem 0;
+		//transition: height 0.5s ease-out 0.5s;
+
+		img{
+			position: relative;
+			left: 50%;
+			top: 50%;
+			height: 39px;
+			margin-left: -61px;
+			margin-top: -20px;
+			vertical-align: top;
+			user-select: none; //чтобы не выделалось, когда щелкаю по тогглеру меню.
+		}
+		//display: flex;
+		//align-items: center;
+		//justify-content: center;
+
+		//&.loaded{
+		//	display: none;
+		//}
+	}
+
+	&__title-bg{
+		display: flex;
+		align-items: flex-end;
+		padding: 0.875rem 0;
+		height: 190px;
+		background: $secondary;
+		text-align: right;
+		color: $white;
+		font-family: $font-MADEBarista;
+		font-size: 40px;
+		line-height: 55px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+
+		@include media-breakpoint-up(md) {
+			height: 300px;
+			font-size: 60px;
+			line-height: 80px;
+		}
+		@include media-breakpoint-up(lg) {
+			height: 425px;
+			font-size: 96px;
+			line-height: 110px;
+		}
+		&_news{
+			background: url("/imgs/news_list_bg.jpg") left top no-repeat;
+			background-size: cover;
+		}
+		&_catalog-categories{
+			background: url("/imgs/categories_bg.png") left top no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__title{
+		font-family: $font-MADEBarista;
+		font-size: 64px;
+		line-height: 64px;
+		text-transform: uppercase;
+		margin-bottom: 1.3rem;
+
+		nav + &{
+			margin-top: -0.6rem;
+		}
+	}
+}
+
+body {
+	--removed-body-scroll-bar-size: 15px;
+}

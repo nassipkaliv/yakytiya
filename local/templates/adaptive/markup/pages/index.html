@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" class="h-100">
+{{> head }}
+<body class="d-flex flex-column h-100 layout">
+<!-- Блок layout__page-loader нужно подключать только на главной странице. -->
+<div class="layout__page-loader" id="js-page-loader">
+	<img src="/imgs/logo.svg" alt="Якутия - единая торговая площадка">
+</div>
+{{> header }}
+<main class="flex-shrink-0 mb-5">
+	<div class="homepage">
+		<div id="fullpage">
+			<div class="section">
+				<div class="homepage__banner homepage__fp-slide-full-height">
+					<div class="swiper swiper-banner mt-0">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="video-overlay"></div>
+								<video
+										id="my-video1"
+										class="video-js"
+										muted
+										autoplay
+										data-autoplay
+										loop
+										data-setup="{}"
+								>
+									<source src="/upload/banner/video/video.mp4" type="video/mp4" />
+									<p class="vjs-no-js">
+										Для просмотра этого видео, пожалуйста, убедитесь что JavaScript включен и
+										Ваш браузер
+										<a href="https://videojs.com/html5-video-support/" target="_blank"
+										>поддерживает видео HTML5</a>
+									</p>
+								</video>
+							</div>
+							<div class="swiper-slide"><a href="http://ya.ru"><img src="/upload/banner/1.jpg" alt=""></a></div>
+							<div class="swiper-slide"><a href="#"><img src="/upload/banner/2.jpg" alt=""></a></div>
+							<div class="swiper-slide"><a href="#"><img src="/upload/banner/3.jpg" alt=""></a></div>
+							<div class="swiper-slide"><a href="#"><img src="/upload/banner/4.jpg" alt=""></a></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__popular homepage__fp-slide-full-height">
+					<h2 class="container-fluid homepage__h2">
+						Популярные категории товаров
+					</h2>
+					<div class="homepage__popular-title">
+						Популярные <br>
+						категории <br>
+						товаров
+					</div>
+					<div class="homepage__popular-items">
+						<div class="homepage__popular-items-row">
+							<a href="http://ya.ru"><img src="/upload/popular/1.jpg" alt=""><span>Якутские Ножи</span></a>
+							<a href="#"><img src="/upload/popular/2.jpg" alt=""><span>Украшения</span></a>
+						</div>
+						<div class="homepage__popular-items-row">
+							<a href="#"><img src="/upload/popular/3.jpg" alt=""><span>Украшения</span></a>
+							<a href="#"><img src="/upload/popular/4.jpg" alt=""><span>Мед</span></a>
+						</div>
+						<div class="homepage__popular-items-row">
+							<a href="#"><img src="/upload/popular/5.jpg" alt=""><span>Национальная одеджа</span></a>
+							<a href="#"><img src="/upload/popular/6.jpg" alt=""><span>Национальная посуда</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__fp-slide">
+					<h2 class="container-fluid homepage__h2">
+						Новинки
+					</h2>
+					<!-- Swiper -->
+					<div class="swiper swiper-novelties js-swiper-novelties">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="/upload/catalog/novelty.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье серое</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="/imgs/sprite.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="/upload/catalog/novelty.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Промежуточный костюм универсальный с оленьей шерстью</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">122 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="/imgs/sprite.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="/upload/catalog/novelty.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="/imgs/sprite.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="/upload/catalog/novelty.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="/imgs/sprite.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="/upload/catalog/novelty.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="/imgs/sprite.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="/upload/catalog/novelty.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="/imgs/sprite.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="novelty-item">
+									<a href="http://ya.ru" class="novelty-item__image">
+										<img src="/upload/catalog/novelty.jpg" alt="Платье серое">
+									</a>
+									<div class="text-center pt-2">
+										<a href="#" class="novelty-item__title link-dark">Платье национальное темно-серое со вставками</a>
+										<div class="novelty-item__prices">
+											<span class="fw-bold fs-5">12 200 ₽</span>
+											<span class="text-decoration-line-through">12 800 ₽</span>
+										</div>
+										<div class="novelty-item__rating">
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+											<svg class="uicon-star"><use xlink:href="/imgs/sprite.svg#star"></use></svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+					<div class="homepage__adv">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">
+									<a href="#"><img src="/upload/rekl/rekl1.jpg" alt="Реклама 1"></a>
+								</div>
+								<div class="col">
+									<a href="#"><img src="/upload/rekl/rekl2.jpg" alt="Реклама 2"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__fp-slide">
+					<h2 class="container-fluid homepage__h2">
+						Популярные товары
+					</h2>
+					{{> swiper-products-2-line }}
+				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__fp-slide">
+					<h2 class="container-fluid homepage__h2">
+						Лучшие предложения
+					</h2>
+					{{> swiper-products-2-line }}
+				</div>
+			</div>
+			<div class="section">
+				<div class="homepage__fp-slide-full-height homepage__fp-slide-brands">
+					<div class="homepage__fp-slide-brands-content">
+						<div class="w-100">
+							<h2 class="container-fluid homepage__h2">
+								Популярные бренды
+							</h2>
+							<div class="mb-5">
+								<div class="homepage__brands">
+									<div class="d-flex flex-wrap justify-content-between">
+										<a href="#"><img src="/upload/brand/1.jpg" alt="Название бренда"></a>
+										<a href="#"><img src="/upload/brand/2.jpg" alt="Название бренда"></a>
+										<a href="#"><img src="/upload/brand/3.jpg" alt="Название бренда"></a>
+										<a href="#"><img src="/upload/brand/4.jpg" alt="Название бренда"></a>
+										<a href="#"><img src="/upload/brand/5.jpg" alt="Название бренда"></a>
+										<a href="#"><img src="/upload/brand/6.jpg" alt="Название бренда"></a>
+										<a href="#"><img src="/upload/brand/7.jpg" alt="Название бренда"></a>
+										<a href="#"><img src="/upload/brand/8.jpg" alt="Название бренда"></a>
+									</div>
+								</div>
+								<div class="pt-5 text-center">
+									<a href="#" class="btn btn-primary btn-lg">Все бренды</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					{{> footer }}
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!--{{> footer }}-->
+</body>
+</html>

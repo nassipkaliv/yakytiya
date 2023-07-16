@@ -1,0 +1,34 @@
+.detail-page{
+	&__image{
+		text-align: center;
+		margin-bottom: 1.5rem;
+		img{
+			max-width: 100%;
+		}
+	}
+	&__date{
+		margin-top: $subtitle-margin-top;
+		margin-bottom: $subtitle-margin-bottom;
+		color: $gray-600;
+	}
+	&__content{
+		margin-bottom: 1.5rem;
+	}
+	&__back{
+		text-align: right;
+	}
+}
+
+.text-content{
+	img{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom: 1rem;
+	}
+}
+
+hr{
+	border-top: 1px solid $primary;
+	opacity: 1;
+}

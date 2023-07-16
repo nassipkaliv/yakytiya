@@ -1,0 +1,48 @@
+{{> header-inner-page }}
+<div class="container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Главная</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Вход</li>
+    </ol>
+  </nav>
+  <h1 class="layout__title">Вход</h1>
+
+  <div class="row">
+    <div class="col col-md-6 col-lg-4">
+      <form>
+        <div class="mb-4">
+          <label for="login" class="form-label">Логин</label>
+          <input type="text" class="form-control" id="login">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="form-label is-invalid">Пароль</label>
+          <input type="password" class="form-control" id="password">
+          <div class="invalid-feedback">Поле обязательно для заполнения.</div>
+        </div>
+        <div class="mb-4 form-check">
+          <input type="checkbox" class="form-check-input" id="checkbox">
+          <label class="form-check-label" for="checkbox">Запомнить меня на этом компьютере</label>
+        </div>
+        <button type="submit" class="btn btn-secondary btn-lg mt-3">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-md-8">
+      <hr class="signin-hr">
+
+      <div class="fs-5">
+        <p>
+          <a href="#">Забыли пароль?</a>
+        </p>
+        <p>Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.</p>
+        <div>
+          <a href="#">Зарегистрироваться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{> footer-inner-page }}

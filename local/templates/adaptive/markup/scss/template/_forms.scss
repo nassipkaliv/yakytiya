@@ -1,0 +1,23 @@
+.form-check{
+	user-select: none;
+}
+.form-check-label{
+	font-size: $font-size-14px;
+	//font-size: $font-size-14px;
+}
+
+.input-group-captcha{
+	padding: 0 1rem;
+	background: white;
+	img{
+		height: 100%;
+		padding: 2px;
+	}
+}
+
+.form-required{
+	//position: relative;
+	//top: 0.2rem;
+	color: red;
+	margin-right: 0.2rem;
+}

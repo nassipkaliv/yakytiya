@@ -1,0 +1,100 @@
+.footer{
+	background: $footer-bg-color;
+	padding: 2rem 0 1.7rem 0;
+	color: $white;
+
+	&__inner{
+		margin-bottom: 70px;
+		@include media-breakpoint-up(sm) {
+			&{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__col{
+		margin-bottom: 2rem;
+		@include media-breakpoint-only(md) {
+			&{
+
+				width: 23%;
+				&_logo{
+					width: 31%;
+				}
+			}
+		}
+		@include media-breakpoint-up(md) {
+			&{
+				margin-bottom: 6.5rem;
+			}
+		}
+	}
+	&__arrow-up{
+		cursor: pointer;
+	}
+}
+
+.menu-footer{
+	&__header{
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+		li{
+			padding: 0;
+			margin: 0;
+			display: block;
+			a{
+				color: $white;
+				text-decoration: none;
+				font-size: $font-size-12px;
+				&:hover, &:focus{
+					color: $gray-400;
+				}
+			}
+		}
+	}
+}
+
+.mobile-bottom-nav{
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: $mobile-bottom-nav-height;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+
+	a{
+		display: block;
+		text-decoration: none;
+		position: relative;
+
+		.badge{
+			font-size: 0.5rem;
+			position: absolute;
+			width: 0.875rem;
+			height: 0.875rem;
+			bottom: -0.1rem;
+
+			.badge-inner{
+				margin-left: -2px;
+			}
+		}
+	}
+	&__favorites .badge{
+		right: 0;
+	}
+	&__basket .badge{
+		right: -0.4rem;
+	}
+
+	@include media-breakpoint-up(sm) {
+		display: none;
+	}
+}

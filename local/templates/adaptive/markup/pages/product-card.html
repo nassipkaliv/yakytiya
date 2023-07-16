@@ -1,0 +1,303 @@
+{{> header-inner-page }}
+<div class="container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Главная</a></li>
+      <li class="breadcrumb-item"><a href="/">Одежда</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Платье серое</li>
+    </ol>
+  </nav>
+  <h1 class="layout__title">Платье серое</h1>
+  <div class="product-card" id="js-product-card">
+    <div class="product-card__subtitle">
+      <div class="product-card__rating">
+        <svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+        <svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+        <svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+        <svg class="uicon-star_active"><use xlink:href="/imgs/sprite.svg#star_active"></use></svg>
+        <svg class="uicon-star"><use xlink:href="/imgs/sprite.svg#star"></use></svg>
+      </div>
+      <div class="product-card__review-count">42 отзыва</div>
+    </div>
+    <div class="product-card__main">
+      <div class="row">
+        <div class="col col-12 col-md-6 col-lg-5">
+          <div class="product-card__images">
+            {{> images-gallery-product }}
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-7">
+          <div class="row">
+            <div class="col col-12 col-lg-5">
+              <div class="product-card__article">Артикул: <b class="ms-2">202015</b></div>
+              <div class="product-card__sku">
+                <span class="product-card__sku-title">Размер:</span>
+                <div class="product-card__sku-list">
+                  <a href="#" class="btn btm-sm btn-sku">42</a>
+                  <a href="#" class="btn btm-sm btn-sku">44</a>
+                  <a href="#" class="btn btm-sm btn-sku active">46</a>
+                  <a href="#" class="btn btm-sm btn-sku">48</a>
+                  <a href="#" class="btn btm-sm btn-sku">50</a>
+                  <a href="#" class="btn btm-sm btn-sku">52</a>
+                  <a href="#" class="btn btm-sm btn-sku">54</a>
+                </div>
+              </div>
+              <div class="product-card__brand product-card__brand_desktop">
+                <a href="#"><img src="/upload/catalog/detail/brand.png" alt="УРУУ"></a>
+              </div>
+            </div>
+            <div class="col col-12 col-lg-7">
+              <div class="product-card__pay">
+                <div class="product-card__price-block">
+                  <div class="product-card__price">12 200 000 ₽</div>
+                  <div class="product-card__price-old">15 200 000 ₽</div>
+                </div>
+                <div class="product-card__quantity">
+                  <span>Количество:</span>
+                  <button class="product-card__quantity-btn">+</button>
+                  <input class="product-card__quantity-input" type="text" value="1">
+                  <button class="product-card__quantity-btn minus">&ndash;</button>
+                </div>
+                <div class="product-card__button-buy">
+                  <a href="#" class="btn btn-secondary btn-lg">Купить</a>
+<!--                  Кнопка предзаказа - раскомментировать -->
+<!--                  <a href="#" class="btn btn-secondary btn-lg"><span>Оформить</span><br>предзаказ</a>-->
+                </div>
+                <div class="product-card__button-fave">
+                  <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#faveModal">
+                    В избранное
+                    <!-- Если добавили в избранное, то кнопка имеет текст "В избранном"-->
+                    <span class="d-none">В избранном</span>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card__brand product-card__brand_mobile">
+                <a href="#"><img src="/upload/catalog/detail/brand.png" alt="УРУУ"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card__brand product-card__brand_tablet">
+          <a href="#"><img src="/upload/catalog/detail/brand.png" alt="УРУУ"></a>
+        </div>
+
+      </div>
+    </div>
+    <div class="product-card__info">
+      <div class="product-card__tabs">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc-tab-pane"
+                    type="button" role="tab" aria-controls="desc-tab-pane" aria-selected="true">Описание
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech-tab-pane"
+                    type="button" role="tab" aria-controls="tech-tab-pane" aria-selected="false">Характеристики
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery-tab-pane"
+                    type="button" role="tab" aria-controls="delivery-tab-pane" aria-selected="false">Доставка
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review-tab-pane"
+                    type="button" role="tab" aria-controls="review-tab-pane" aria-selected="false">Отзывы
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content accordion" id="myTabContent">
+          <div class="tab-pane fade show active accordion-item" id="desc-tab-pane" role="tabpanel" aria-labelledby="desc-tab" tabindex="0">
+            <h2 class="accordion-header" id="headingDesc">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesc" aria-expanded="true" aria-controls="collapseDesc">
+                Описание
+              </button>
+            </h2>
+            <div id="collapseDesc" class="accordion-collapse collapse show" aria-labelledby="headingDesc">
+              <div class="accordion-body">
+                <div class="product-card__desc">
+                  Серое платье с застежкой на кнопках - это классика. Нарядный сарафан выполнен из ткани деним, которая
+                  прекрасно держит форму. У платья красивый вырез, выгодно подчеркивающий грудь, накладные карманы и юбка длины
+                  миди. Молодежное модное платье с открытыми плечами и без рукавов подходит как на каждый день, так и для
+                  праздника. Его можно надеть на прогулку с друзьями по пляжу, деловую встречу в городе или как вечернее платье
+                  на свадьбу подружки. Стильная, яркая модель (без нашивок) подходит для работы, ее можно вписать в школьную
+                  форму, взять с собой в летний отпуск на море или надеть во время домашнего отдыха. Сарафан подходит для весны,
+                  лета и осени и отлично сочетается с одеждой любого стиля. Он актуален как для взрослых женщин, так и для
+                  девушек - подростков.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade accordion-item" id="tech-tab-pane" role="tabpanel" aria-labelledby="tech-tab" tabindex="0">
+            <h2 class="accordion-header" id="headingTech">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTech" aria-expanded="true" aria-controls="collapseTech">
+                Характеристики
+              </button>
+            </h2>
+            <div id="collapseTech" class="accordion-collapse collapse" aria-labelledby="headingTech">
+              <div class="accordion-body">
+                <div class="product-card__tech">
+                  <div class="product-card__tech-el">
+                    <div class="product-card__tech-name">
+                      <div class="inner">
+                        <div class="label">Цвет</div>
+                        <div class="dot">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tech-value">Серый</div>
+                  </div>
+                  <div class="product-card__tech-el">
+                    <div class="product-card__tech-name">
+                      <div class="inner">
+                        <div class="label">Материал</div>
+                        <div class="dot">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tech-value">Хлопок</div>
+                  </div>
+                  <div class="product-card__tech-el">
+                    <div class="product-card__tech-name">
+                      <div class="inner">
+                        <div class="label">Особенности модели</div>
+                        <div class="dot">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tech-value">повседневная, для беременных</div>
+                  </div>
+                  <div class="product-card__tech-el">
+                    <div class="product-card__tech-name">
+                      <div class="inner">
+                        <div class="label">Вид застежки</div>
+                        <div class="dot">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tech-value">Клепки</div>
+                  </div>
+                  <div class="product-card__tech-el">
+                    <div class="product-card__tech-name">
+                      <div class="inner">
+                        <div class="label">Длина рукава</div>
+                        <div class="dot">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tech-value">52 см</div>
+                  </div>
+                  <div class="product-card__tech-el">
+                    <div class="product-card__tech-name">
+                      <div class="inner">
+                        <div class="label">Пол</div>
+                        <div class="dot">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="product-card__tech-value">Женский</div>
+                  </div>
+                  <div class="product-card__tech-el">
+                    <div class="product-card__tech-name">
+                      <div class="inner">
+                        <div class="label">Длина юбки/платься</div>
+                        <div class="dot">&nbsp;</div>
+                      </div>
+
+                    </div>
+                    <div class="product-card__tech-value">Миди</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade accordion-item" id="delivery-tab-pane" role="tabpanel" aria-labelledby="review-tab" tabindex="0">
+            <h2 class="accordion-header" id="headingDelivery">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDelivery" aria-expanded="true" aria-controls="collapseDelivery">
+                Доставка
+              </button>
+            </h2>
+            <div id="collapseDelivery" class="accordion-collapse collapse" aria-labelledby="headingDelivery">
+              <div class="accordion-body">
+                <div class="product-card__delivery">
+                  <ul>
+                    <li>Электронная доставка</li>
+                    <li>Самовывоз по Якутии</li>
+                    <li>За пределы Якутии - Почта России</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade accordion-item" id="review-tab-pane" role="tabpanel" aria-labelledby="review-tab" tabindex="0">
+            <h2 class="accordion-header" id="headingReview">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReview" aria-expanded="true" aria-controls="collapseReview">
+                Отзывы
+              </button>
+            </h2>
+            <div id="collapseReview" class="accordion-collapse collapse" aria-labelledby="headingReview">
+              <div class="accordion-body">
+                <div class="product-card__review">
+                  <div class="product-card__review-add">
+                    <a href="#">Добавить отзыв</a>
+                  </div>
+                  {{> product-card-review-element }}
+                  {{> product-card-review-element-admin }}
+                  {{> product-card-review-element }}
+                  {{> product-card-review-element }}
+                  {{> product-card-review-element }}
+                  {{> product-card-review-element }}
+                  {{> product-card-review-element }}
+                  {{> product-card-review-element }}
+                  {{> product-card-review-element }}
+                  {{> product-card-review-element }}
+                  {{> pagination }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card__recommendations">
+      <h2>Похожие товары</h2>
+      {{> swiper-products-line }}
+      <h2>Вы недавно смотрели</h2>
+      {{> swiper-products-line }}
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно размещать перед закрывающим тегом body желательно. Правда и так пока что работает. -->
+<div class="images-gallery-modal">
+  <button class="images-gallery-modal__close js-images-gallery-modal-close">
+    <!-- local/templates/adaptive/markup/icons/images_popup_cross.svg -->
+    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 21.9998L21.8989 2.10085" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+      <path d="M22.5092 21.8989L2.61031 2.00002" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  {{> images-gallery-product }}
+</div>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade modal_ok modal_ok-fave" id="faveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex align-items-center">
+          <div class="mr-2">
+            <svg class="uicon-popup_small_check"><use xlink:href="/imgs/sprite.svg#popup_small_check"></use></svg>
+          </div>
+          <div>Товар добавлен в избранное</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{> footer-inner-page }}

@@ -1,0 +1,28 @@
+.animation-move {
+    animation-duration: 3s;
+    animation-name: animated-move;
+}
+@keyframes animated-move {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animation-scale {
+    animation-duration: 3s;
+    animation-name: animated-scale;
+}
+@keyframes animated-scale {
+    from {
+        width: 30%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

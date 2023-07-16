@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'MADEBarista';
+	src: url('madebarista.eot'); /* IE 9 Compatibility Mode */
+	src: url('madebarista.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('madebarista.woff2') format('woff2'), /* Super Modern Browsers */
+		url('madebarista.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('madebarista.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('madebarista.svg#madebarista') format('svg'); /* Chrome < 4, Legacy iOS */
+}

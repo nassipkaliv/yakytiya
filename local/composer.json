@@ -1,0 +1,14 @@
+{
+  "name": "modulecode/yakytiya",
+  "autoload": {
+    "psr-4": {
+      "lib\\": "lib/"
+    }
+  },
+  "require": {
+    "ext-mbstring": "*",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-iconv": "*"
+  }
+}

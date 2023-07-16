@@ -1,0 +1,37 @@
+//Определения
+@import "variables_override";
+
+//Подключение переменных и функций бутстрапа
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+//Подключение сторонних модулей
+// import styles bundle
+@import 'swiper/swiper-bundle.min.css';
+@import 'video.js/src/css/video-js';
+@import 'fullpage.js/dist/jquery.fullpage.css';
+
+//Переопределяем бутстрап
+@import "template/font";
+@import "template/icons";
+@import "template/buttons";
+@import "template/breadcrumb";
+@import "template/pagination";
+@import "template/nav";
+@import "template/modal";
+@import "template/forms";
+
+//Общие компоненты
+@import "template/common";
+@import "template/images-gallery";
+
+//Шаблон
+@import "template/layout";
+@import "template/header";
+@import "template/menu";
+@import "template/footer";
+@import "template/footer";
+
+//Отдельные страницы
+@import "template/pages/all";

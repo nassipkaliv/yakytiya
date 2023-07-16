@@ -1,0 +1,223 @@
+<div class="cart">
+  <div class="container">
+    <h1 class="layout_title">КОРЗИНА</h1>
+  
+    <!-- КОРЗИНА ПУСТА -->
+    <!-- <h1>
+      <b>ВАША КОРЗИНА ПУСТА</b>
+    </h1>
+  
+    <p style="font-size: 20px;">
+      <a href="#">Нажмите здесь,</a> чтобы продолжить покупки
+    </p> -->
+  
+    <hr>
+      <div class="row">
+        <div class="col">
+          <p>В корзине 1 товар</p>
+        </div>  
+        <div class="col">
+          <div class="clearCan">
+            <button class="float-end" data-bs-toggle="modal" data-bs-target="#clearModal">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 20.9498L20.799 1.15084" stroke="#583D80" stroke-width="2" stroke-linecap="round"/>
+                <path d="M21.4053 20.8492L1.60636 1.05025" stroke="#583D80" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              ОЧИСТИТЬ КОРЗИНУ  
+            </button>
+          </div>
+        </div> 
+      </div>
+      <hr>
+      <!-- TODO -->
+      <div class="product-cart">
+        <div class="first-product">
+          <div class="message">
+          </div>
+          <div class="row">
+            <div class="col-md-1">
+              <a href="#"><img src="../upload/krisa.png" class="img-fluid" alt="krisa"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="product-text">
+                <p class="name">Композиция «Мышь» из бивня мамонта</p>
+                <p class="sale">Скидка <span>40%</span></p>
+                <p class="category">Souvenir Mammoth Yarutia</p>
+              </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-5">
+              <p>12 200 ₽</p>
+              <div class="product-card-quantity">
+                <button class="product-card-quantity-btn">+</button>
+                <input class="product-card-quantity-input" type="text" value="1">
+                <button class="product-card-quantity-btn minus">&ndash;</button>
+              </div>
+              <p>12 200 ₽</p>
+              <div class="col">
+                <button type="button" class="float-end" onclick="deleteProduct(this)">  
+                  <svg  width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14" cy="14" r="14" fill="#FF0000"/>
+                  <path d="M18.649 8.58279L9.01044 19.3507" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                  <path d="M8.4281 8.82861L19.196 18.4672" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      
+      <div class="payment">
+        <div class="row">
+          <p>
+            Введите промокод для скидки:
+          </p>
+          <div class="col-sm-6 w-25">
+            <input class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="col-sm-6">
+            <button type="button" class="btn btn-secondary btn-lg" onclick="applyPromoCode()">ПРИМЕНИТЬ</button>
+          </div>
+          <div class="col">
+            <p class="float-end">Итого: <span id="finalPrice">12 200₽</span></p>
+            <button type="button" class="btn btn-secondary btn-lg float-end" >ПРИМЕНИТЬ</button>
+          </div>
+          <div class="col-md-8">
+            <div id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="clearModal" tabindex="-1" aria-labelledby="clearModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" >
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="close-btn">
+            <button type="button" class="close" data-dismiss="modal"  data-bs-dismiss="modal" aria-label="Close">
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.3208 12.7021L13.6232 1.05882" stroke="#583D80" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M14 12.6436L1.69762 1.00023" stroke="#583D80" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <p>Очистить корзину?</p>
+          <button type="button" class="btn btn-secondary"  onclick="emptycart()">Да</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Нет</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <script>
+    let promoCodes = [];
+    var deletedProduct = null;
+  
+    function deleteProduct(button) {
+    var productName = button.closest('.row').querySelector('.name').textContent.trim();
+    var row = button.closest('.row');
+    var messageDiv = row.parentElement.querySelector('.message');
+    
+    // Сохраняем удаленный продукт
+    deletedProduct = row.cloneNode(true);
+    
+    row.remove();
+    finalPrice.innerHTML = "12 200 ₽";
+    messageDiv.innerHTML = `
+      <div class="row">
+        <div class="col-md-8 float-start">
+          <div>Товар Композиция «Мышь» из бивня мамонта был удален из корзины.</div>
+        </div>
+        <div class="col">
+          <div class="product-restore float-end">
+            <u onclick="restoreProduct()">Восстановить</u> 
+            <button type="button" onclick="emptycart()">  
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="14" fill="#FF0000"/>
+                <path d="M18.649 8.58279L9.01044 19.3507" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                <path d="M8.4281 8.82861L19.196 18.4672" stroke="white" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  
+  function restoreProduct() {
+    if (deletedProduct) {
+      var messageDiv = document.getElementById('message');
+  
+      messageDiv.innerHTML = '';
+      messageDiv.appendChild(deletedProduct);
+      deletedProduct = null;
+    }
+  }
+  
+    function applyPromoCode() {
+      let input = document.getElementById("exampleFormControlInput1");
+      let promoCode = input.value.toUpperCase();
+      let resultDiv = document.getElementById("result");
+      var finalPrice = document.getElementById("finalPrice");
+      let promoCodeDisplayDiv = document.getElementById("promoCodeDisplay");
+      
+      if (promoCode === "ЛЕТО") {
+        finalPrice.innerHTML = "7 320 ₽"
+        promoCodes.push(promoCode);
+        renderPromoCodes();
+      } 
+      else if (promoCode === "7A22506"){
+        resultDiv.innerHTML += `<div id="${promoCode}"><div style="color: var(--4, #F00);">${promoCode} - не применен.</div> <u onclick="deletePromoCode('${promoCode}')">Удалить</u></div>`;
+        
+      }
+      else {
+        resultDiv.innerHTML += `<div id="${promoCode}"><div style="color: var(--4, #F00);">${promoCode} - не найден.</div> <u onclick="deletePromoCode('${promoCode}')">Удалить</u></div>`;
+      }
+    }
+  
+    function deletePromoCode(promoCode) {
+      let promoCodeElement = document.getElementById(promoCode);
+      if (promoCodeElement) {
+        promoCodeElement.remove();
+        promoCodes = promoCodes.filter(function(code) {
+          return code !== promoCode;
+        });
+      }
+    }
+    function renderPromoCodes() {
+      let resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "";
+      
+      promoCodes.forEach(function(promoCode, index) {
+        resultDiv.innerHTML += `<div id="${promoCode}"><span style="font-weight: bold;">${promoCode}</span> - промокод применен (Скидка на Мышку из слоновой кости). <u onclick="deletePromoCode('${promoCode}')">Удалить</u></div>`;
+      });
+    }
+  
+  
+    function emptycart() {
+    var cartContainer = document.querySelector('.cart');
+    cartContainer.innerHTML = '';
+  
+    // Создайте элемент div и загрузите содержимое из файла empty-cart.html
+    var emptyCartDiv = document.createElement('div');
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        emptyCartDiv.innerHTML = xhr.responseText;
+      }
+    };
+    xhr.open('GET', './empty-cart.html', true);
+    xhr.send();
+  
+    // Добавьте созданный элемент div в контейнер корзины
+    cartContainer.appendChild(emptyCartDiv);
+  }
+  
+
+  </script>

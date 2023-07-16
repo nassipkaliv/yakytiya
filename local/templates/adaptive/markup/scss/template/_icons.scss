@@ -1,0 +1,104 @@
+//[class^="uicon-"], [class*=" uicon-"] {
+//	-webkit-font-smoothing: antialiased;
+//	-moz-osx-font-smoothing: grayscale;
+//	display: inline-block;
+//}
+
+.uicon-search{
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 1px;
+}
+.uicon-bag{
+	width: 26px;
+	height: 24px;
+}
+.uicon-user{
+	width: 23px;
+	height: 24px;
+}
+.uicon-heart{
+	width: 26px;
+	height: 23px;
+}
+.uicon-footer_logo{
+	width: 186px;
+	height: 79px;
+}
+.uicon-footer_my_business{
+	width: 43px;
+	height: 20px;
+}
+.uicon-footer_national_projects{
+	width: 39px;
+	height: 28px;
+}
+.uicon-arrow_up{
+	width: 29px;
+	height: 27px;
+}
+.uicon-menu_toggler{
+	width: 28px;
+	height: 18px;
+}
+.uicon-menu_cross{
+	width: 23px;
+	height: 22px;
+}
+.uicon-search_toggler{
+	width: 24px;
+	height: 24px;
+}
+.uicon-search_cross{
+	width: 15px;
+	height: 14px;
+}
+.uicon-star_active{
+	width: 15px;
+	height: 14px;
+}
+.uicon-star{
+	width: 15px;
+	height: 14px;
+}
+.uicon-home_gray{
+	width: 22px;
+	height: 24px;
+}
+.uicon-heart_gray_no_bg{
+	width: 27px;
+	height: 23px;
+}
+.uicon-bag_gray{
+	width: 27px;
+	height: 24px;
+}
+.uicon-user_gray{
+	width: 27px;
+	height: 24px;
+}
+.uicon-pagination_arrow{
+	position: relative;
+	top: 1px;
+	width: 12px;
+	height: 22px;
+	vertical-align: top;
+	path{
+		stroke: $primary;
+		//взято из $pagination-transition
+		transition: stroke .15s ease-in-out;
+	}
+	a:hover & path{
+		stroke: #fff;
+	}
+}
+.uicon-popup_small_check{
+	width: 30px;
+	height: 31px;
+	margin-right: 0.5rem;
+}
+
+
+
+

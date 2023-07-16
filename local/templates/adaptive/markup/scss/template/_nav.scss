@@ -1,0 +1,29 @@
+.nav-tabs{
+	.nav-link{
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		color: $body-color;
+
+		&:first-child{
+			padding-left: 0;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			height: 2px;
+			background: transparent;
+			margin-top: $nav-link-padding-y;
+			margin-bottom: -1 * $nav-link-padding-y;
+			transition: $nav-link-transition;
+		}
+
+		&.active{
+			position: relative;
+			&:after{
+				background: $secondary;
+			}
+			//border-bottom: 2px solid $secondary;
+		}
+	}
+}

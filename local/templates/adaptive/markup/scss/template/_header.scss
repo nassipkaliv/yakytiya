@@ -1,0 +1,192 @@
+.header{
+  background: $green;
+  z-index: 3;
+
+  .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    background: $navbar-bg-color;
+    height: $header-height;
+    .navbar-brand{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -61px;
+      margin-top: -20px;
+      padding: 0;
+      user-select: none; //чтобы не выделалось, когда щелкаю по тогглеру меню.
+    }
+  }
+
+  &__search{
+    position: relative;
+    &-input{
+      width: 15rem;
+      height: 1.4rem;
+      padding-right: 1.5rem;
+      border-radius: 0.7rem;
+      border: none;
+      font-size: $font-size-sm;
+      background: rgba($white, 0.9);
+      &::placeholder{
+        font-style: italic;
+      }
+      @include media-breakpoint-up(xl) {
+        &{
+          width: 18rem;
+        }
+      }
+    }
+
+    &-btn{
+      position: absolute;
+      right: 2.3rem;
+      top: -0.15rem;
+      padding: 0;
+      background: none;
+      border: none;
+      @include media-breakpoint-up(lg) {
+        &{
+          right: 0.9rem;
+        }
+      }
+    }
+    &-cancel{
+      position: absolute;
+      background: none;
+      border: none;
+      right: 0.3rem;
+      top: -0.15rem;
+      @include media-breakpoint-up(lg) {
+        &{
+          display: none;
+        }
+      }
+    }
+
+    &-toggler{
+      cursor: pointer;
+      @include media-breakpoint-up(lg) {
+        &{
+          display: none;
+        }
+      }
+    }
+
+    &-form{
+      display: none;
+      @include media-breakpoint-up(lg) {
+        &{
+          display: flex;
+        }
+      }
+    }
+  }
+  &__personal{
+    display: none;
+    @include media-breakpoint-up(sm) {
+      &{
+        display: flex;
+      }
+    }
+    .badge{
+      font-size: 0.5rem;
+      position: absolute;
+      width: 0.875rem;
+      height: 0.875rem;
+      bottom: -0.1rem;
+
+      .badge-inner{
+        margin-left: -2px;
+      }
+    }
+  }
+  &__favorites, &__basket{
+    position: relative;
+    display: inline-block;
+  }
+  &__favorites .badge{
+    right: 0;
+  }
+  &__basket .badge{
+    right: -0.4rem;
+  }
+
+  &__search, &__cabinet, &__favorites{
+    margin-right: 1.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    &__search{
+      margin-right: 0;
+    }
+  }
+
+  &__cabinet{
+    .dropdown-toggle{
+      padding: 0;
+      border: none;
+      background: transparent;
+      &:after{
+        display: none;
+      }
+      img{
+        border-radius: 50%;
+      }
+    }
+
+    .dropdown-menu{
+      border: none;
+      --bs-border-color-translucent: transparent;
+      //filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.30));
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
+      min-width: 260px;
+      transform: translate(30px, 10px);
+
+      .dropdown-profile{
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        color: $body-color;
+        img{
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &-username{
+      font-weight: bold;
+      white-space: normal;
+      padding-left: $dropdown-header-padding-x;
+      text-decoration: none;
+    }
+  }
+
+
+}
+
+//поддержка показа поля ввода поиска в мобильнике по клику
+@include media-breakpoint-down(lg) {
+  .js-mobile-search-showed{
+    .navbar-brand{
+      display: none;
+    }
+    .header__personal{
+      display: none;
+    }
+
+    .header__search{
+      margin-right: 0;
+      flex-grow: 1;
+      margin-left: 2rem;
+    }
+    .header__search-form{
+      display: flex;
+    }
+    .header__search-input{
+      width: 100%;
+    }
+    .header__search-toggler{
+      display: none;
+    }
+  }
+}

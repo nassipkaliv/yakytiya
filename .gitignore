@@ -1,0 +1,7 @@
+/bitrix
+/upload
+/tmp
+.idea
+.env
+*.log
+.vscode

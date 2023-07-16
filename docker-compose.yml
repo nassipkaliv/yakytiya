@@ -1,0 +1,107 @@
+version: '3.8'
+
+services:
+    nginx:
+        build: ./.docker/etc/nginx
+        depends_on:
+            - php
+        volumes:
+            - ./.docker/log/nginx:/var/log/nginx
+            - ./:/var/www/html
+        ports:
+            - ${HTTP_BIND_PORT}:80
+        links:
+            - php
+        networks:
+          bitrix:
+            ipv4_address: ${IPV4_NETWORK:-172.32.0}.2
+            aliases:
+              - ${APP_NAME:-yakutsk}-nginx
+    php:
+        build:
+          args:
+            UID: ${DOCKER_USER_ID}
+            GID: ${DOCKER_GROUP_ID}
+          dockerfile: ./.docker/etc/${PHP_VERSION}/Dockerfile
+        volumes:
+            - ./.docker/log/php:/var/log/php
+            - ./:/var/www/html
+            - ssh-vol-1:/var/www/.ssh
+        depends_on:
+            - mysql
+            - memcached
+#            - mailhog
+        links:
+            - mysql
+            - memcached
+#            - mailhog
+        networks:
+          bitrix:
+            ipv4_address: ${IPV4_NETWORK:-172.32.0}.3
+            aliases:
+              - ${APP_NAME:-yakutsk}-php
+    mysql:
+        build: ./.docker/etc/mysql
+        hostname: "${MYSQL_HOST}"
+        ports:
+          - ${MYSQL_PORT}:${MYSQL_PORT}
+        environment:
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        volumes:
+          - mysql-vol-1:/var/lib/mysql
+          - backup-mysql-vol-1:/var/lib/backup/
+          - ./.docker/log/mysql:/var/log/mysql       
+        networks:
+          bitrix:
+            ipv4_address: ${IPV4_NETWORK:-172.32.0}.4
+            aliases:
+              - ${APP_NAME:-yakutsk}-mysql
+    memcached:
+        image: memcached:1.6.17-alpine
+        volumes:
+            - memcached-vol-1:/var/lib/memcached
+            - ./.docker/log/memcached:/var/log/memcached
+        ports:
+            - ${MEMCACHED_PORT}:${MEMCACHED_PORT}
+        networks:
+          bitrix:
+            ipv4_address: ${IPV4_NETWORK:-172.32.0}.5
+            aliases:
+              - ${APP_NAME:-yakutsk}-memcached       
+networks:
+  bitrix:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: ${IPV4_NETWORK:-172.32.0}.0/24
+          gateway: ${IPV4_NETWORK:-172.32.1}.1
+
+volumes:
+  mysql-vol-1:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "${LOCAL_VOLUMES}/mysql/data/"
+  memcached-vol-1:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "${LOCAL_VOLUMES}/memcached/"
+  backup-mysql-vol-1:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "${LOCAL_BACKUP}/mysql/"
+  ssh-vol-1:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "${SSH}"
